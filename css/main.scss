@@ -20,7 +20,10 @@ header {
 }
 
 section {
-  padding: 4em;
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 4rem;
 
   h1 {
     font-size: 6em;
@@ -29,6 +32,7 @@ section {
     font-style: normal;
     text-align: center;
     width: 100%;
+    text-transform: uppercase;
   }
   h2 {
     font-weight: 300;
@@ -37,14 +41,28 @@ section {
     width: 100%;
     letter-spacing: 2px;
     word-spacing: 2px;
+    text-transform: uppercase;
   }
+}
+
+.profile-div {
+  width: 100%;
+  align-items: center;
+}
+.profile {
+  align-content: center;
+  min-width: 300px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   background-color: #ffffff;
-  padding: 2em;
+  padding: 2em 2em 0em 2em;
   height: 80 px;
   width: 100%;
 
@@ -58,6 +76,7 @@ nav {
     color: black;
     list-style-type: none;
     text-transform: uppercase;
+    margin-top: 2.5rem;
     li {
       display: inline-block;
       line-height: 80px;
@@ -68,6 +87,7 @@ nav {
 
 .burger {
   display: none;
+  margin-top: 4em;
   div {
     width: 25px;
     height: 2px;
@@ -86,7 +106,7 @@ nav {
       position: absolute;
       right: 0px;
       height: 92vh;
-      top: 10rem;
+      top: 9.7rem;
       background-color: black;
       display: flex;
       flex-direction: column;
@@ -115,9 +135,26 @@ nav {
       }
     }
   }
+
   .burger {
     display: block;
     cursor: pointer;
+  }
+
+  section {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+
+    h1 {
+      font-size: 4em;
+      width: 100%;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 2em;
+    }
   }
 }
 
@@ -151,13 +188,13 @@ a:active {
 }
 
 .toggle {
-  .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  .line2 {
-    opacity: 0;
-  }
-  .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
+  // .line1 {
+  //   transform: rotate(-45deg) translate(-5px, 6px);
+  // }
+  // .line2 {
+  //   opacity: 0;
+  // }
+  // .line3 {
+  //   transform: rotate(45deg) translate(-5px, -6px);
+  // }
 }
